@@ -5,3 +5,5 @@ require('dotenv').config()
 const PORT= process.env.PORT || 4000
 
 app.use(express.json())
+
+require("./config/database").connect() 
